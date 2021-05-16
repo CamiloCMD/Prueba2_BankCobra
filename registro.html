@@ -20,10 +20,6 @@
             <a class="navbar-brand" href="index.html">
               <img src="img/logo_01.png" width="120" height="113" alt="Logo">
             </a>
-            <a class ="btn-navbar justify-content-end">
-            <button class="btn btn-outline-warning text-light" type="button">Acceso Clientes</button>
-            <button class="btn btn-outline-warning text-light" type="button">Portate aqui</button>
-            </a>
           </nav>
       </header>
     <!--Cuerpo Principal-->
@@ -69,7 +65,7 @@
                             <small class="obligatorio text-danger">(*)</small>
                         </label>
                     </div>
-                    <input type="text" class="form-control col-md-9" id="txt_correo">
+                    <input type="email" class="form-control col-md-9" id="txt_correo">
                 </div>
                 
                 <div class="input-group">
@@ -86,19 +82,27 @@
                     </select>
                 </div>
                 <br><br>
-                <div class="container row justify-content-center">
-                    <button type="button" class="btn btn-outline-warning text-light" id="btn_limpiar">Limpiar</button>
-                    <button type="button" class="btn btn-outline-warning text-light" id="btn_finalizarRegistro">Finalizar Registro</button>
-                </div> <br><br>
-                <label id="lbl_logIn" class="text-success"></label>
-                <ul id="messages" class="text-danger"></ul>
+                <div class="row justify-content-center">
+                    <div class="mb-2">
+                        <button type="button" class="btn btn-danger text-light mb-3" id="btn_limpiar">Limpiar</button>
+                    </div><br>
+                    <div class="mb-2 obligatorio">
+                        <button type="button" class="btn btn-danger text-light mb-2" id="btn_finalizarRegistro">Finalizar Registro</button>
+                    </div>
+                </div>
+                <div class="mb-2 row justify-content-center">
+                    <button type="button" class="btn btn-danger btn-outline-warning text-light mb-2" id="btn_ingresar">Ingresar</button>
+                </div>
+                
+                <br>
+                <label id="lbl_registro" class="text-success"></label>
+                <ul id="messagesRegistro" class="text-danger"></ul>
         </div>
-
+    
         <!--Footer-->
-
     </main>  
     <footer>
-        <p class="bg-danger text-light text-center""> Infórmese sobre la garantía estatal de los depósitos en su banco o en CMF www.cmfchile.cl. Infórmese sobre las entidades autorizadas para emitir Tarjetas de Pago en el país, quienes se encuentran inscritas en los Registros de Emisores de Tarjetas que lleva la CMF en www.cmfchile.cl.</p>
+        <p class="bg-danger text-light text-center"> Infórmese sobre la garantía estatal de los depósitos en su banco o en CMF www.cmfchile.cl. Infórmese sobre las entidades autorizadas para emitir Tarjetas de Pago en el país, quienes se encuentran inscritas en los Registros de Emisores de Tarjetas que lleva la CMF en www.cmfchile.cl.</p>
       
       </footer>
 </body>

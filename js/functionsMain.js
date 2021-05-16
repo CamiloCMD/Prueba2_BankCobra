@@ -3,8 +3,12 @@ $(document).ready(function() {
     fn_temperatura();
   });
 
+$('#btn_logout').click(function(){
+    window.open('index.html','_self');
+})
+
 function fn_indicadores(){
-    $.getJSON('https://api.libreapi.cl/weather/stations', function(data){
+    $.getJSON('https://api.libreapi.cl/economy/indicators', function(data){
         var info = data;
         
         $('#lbl_dolar').append('Dólar: $'+''+info.data.dolar);
@@ -17,6 +21,11 @@ function fn_indicadores(){
 
 function fn_temperatura(){
     $.getJSON('https://api.libreapi.cl/weather/stations', function(data){
+      var clima = data;
+      
+      for(w of clima){
+        $('#lbl_temperatura').append('ahora si'+clima.data.name);
+      }
       
         
     }).fail(function(){

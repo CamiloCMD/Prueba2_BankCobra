@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link type = "text/css" rel= "stylesheet" href ="css/normalize.css">
+    <link type = "text/css" rel= "stylesheet" href ="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <title>LOGIN</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-light bg-danger">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo_01.png" width="120" height="113" alt="Logo">
+        </a>
+      </nav>
+  </header>
+        <main class="mb-0 row justify-content-center margenLogin">
+            <div class="div-formularioLogin margenLogin">
+              <h3 class="text-danger text-center bg-warning">ACCESO CLIENTES</h3><br><br>
+                <div class="form-group text-danger">
+                    <label>Rut</label>
+                    <input type="text" class="form-control" id="txt_rutLogin">
+                </div>
+                <div class="form-group  text-danger">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" id="txt_passLogin">
+                </div>
+              <button type="button" class="btn btn-danger text-warning" id="btn_ingresar">Ingresar</button>
+              <button type="button" class="btn btn-danger text-warning" id="btn_limpiar">Limpiar</button>
+              <br><br>
+              <label id="lbl_login" class="text-success"></label>
+              <ul id="messagesLogin" class="text-danger"></ul>
+            </div>
+</main>
+<footer>
+  <p class="bg-danger text-light text-center"> Infórmese sobre la garantía estatal de los depósitos en su banco o en CMF www.cmfchile.cl. Infórmese sobre las entidades autorizadas para emitir Tarjetas de Pago en el país, quienes se encuentran inscritas en los Registros de Emisores de Tarjetas que lleva la CMF en www.cmfchile.cl.</p>
+
+</footer>
+</body>
+<script src="js/functionsLogin.js"></script>
+</html>

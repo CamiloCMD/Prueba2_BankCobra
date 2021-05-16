@@ -20,32 +20,47 @@
               <img src="img/logo_01.png" width="120" height="113" alt="Logo">
             </a>
             <a class ="btn-navbar justify-content-between">
-            <button class="btn btn-outline-warning text-light" type="button">Acceso Clientes</button> 
-            <button class="btn btn-outline-warning text-light" type="button">Portate aqui</button>
+            <button id="btn_logout" class="btn btn-outline-warning text-light" type="button">Cerrar Sesión</button> 
             </a>
           </nav>
       </header>
-    <main>
+    <main class="margenMain">
         <!--Indicadores-->
         <div class="mb-0 row alert alert-secondary">
             <div class="justify-content-start">
-                <label class="align-top">Indicadores
+                <label class="align-top text-monospace">Indicadores
                     <label id="lbl_dolar" class="margenIndicadores bg-warning"></label>
                     <label id="lbl_euro" class="margenIndicadores bg-warning"></label>
                     <label id="lbl_uf" class="margenIndicadores bg-warning"></label>
                 </label>
             </div>
-            <div class="ml-auto">
+            <div class="ml-auto text-monospace">
                 <label>Temperatura Actual
                     <ul id="lbl_temperatura" class="bg-warning"></ul>
                 </label>    
+            </div>
+        </div> <br>
+        <div class="mb-0 row">
+            <div class="bg-danger div-cuadroIzq text-monospace rounded">
                 
+            </div>
+            <div class="bg-warning div-cuadroDer text-monospace rounded-pill">
+                
+                <div>
+                    <label class="text-monospace">Bienvenid@ Estimad@ Cliente</label>
+                </div>
+                <div>
+                    <label class="text-monospace text-light bg-danger">SALDO: </label>
+                </div>
+                <div>
+                    <label class="text-monospace text-light bg-danger">MOVIMIENTOS HOY: </label>
+                </div>
             </div>
         </div>
 
     </main>
     <footer>
-        <p class="bg-danger text-light text-center""> Infórmese sobre la garantía estatal de los depósitos en su banco o en CMF www.cmfchile.cl. Infórmese sobre las entidades autorizadas para emitir Tarjetas de Pago en el país, quienes se encuentran inscritas en los Registros de Emisores de Tarjetas que lleva la CMF en www.cmfchile.cl.</p>
+        <p class="bg-danger text-light text-center"> Infórmese sobre la garantía estatal de los depósitos en su banco o en CMF www.cmfchile.cl. Infórmese sobre las entidades autorizadas para emitir Tarjetas de Pago en el país, quienes se encuentran inscritas en los Registros de Emisores de Tarjetas que lleva la CMF en www.cmfchile.cl.</p>
       
       </footer>
 </body>
