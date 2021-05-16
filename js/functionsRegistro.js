@@ -5,6 +5,10 @@ $('#btn_limpiar').click(function(e){
     fn_removeValido();
     fn_removeInvalido();
 });
+$(document).ready(function(){
+    val=false;
+})
+
 //Boton Registrar
 $('#btn_finalizarRegistro').click(function(e){
     var rut =$('#txt_rut').val();
@@ -24,17 +28,28 @@ $('#btn_finalizarRegistro').click(function(e){
     if(nombres == ""){
         val=false;
         $('#messagesRegistro').append('<li> Debe ingresar un nombre </li>');
-        
+    }
+    if(nombres.length <3){
+        val=false;
+        $('#messagesRegistro').append('<li> El nombre debe contener mas de 3 caracteres </li>');
     }
     if(aPaterno == ""){
         val=false;
         $('#messagesRegistro').append('<li> Debe ingresar el apellido paterno </li>');
         
     }
+    if(aPaterno.length <3){
+        val=false;
+        $('#messagesRegistro').append('<li> El apellido paterno debe contener mas de 3 caracteres </li>');
+    }
     if(aMaterno == ""){
         val=false;
         $('#messagesRegistro').append('<li> Debe ingresar el apellido materno </li>');
         
+    }
+    if(aMaterno.length <3){
+        val=false;
+        $('#messagesRegistro').append('<li> El apellido paterno debe contener mas de 3 caracteres </li>');
     }
     if(correo == ""){
         val=false;
@@ -96,13 +111,18 @@ function fn_addValido(){
     $('#cmb_tipoCuenta').addClass('is-valid');  
 }
 
-$('#btn_ingresar').click(function(){
+$('#btn_ingresarRegistro').click(function(){
     if(val){
-        alert('¡INICIO DE SESIÓN CORRECTO!');
-        window.open('main.html','_self');
+        fn_login();
     }
-
+    else{
+        alert('Debe registrarse para ingresar')
+    }
 })
+
+function fn_login(){
+    window.open('main.html','_self');
+}
 /*
 $('#btn_finalizarRegistro').click(function(e){
     fn_validarRut();
@@ -124,7 +144,7 @@ function fn_validarRut(){
             $('#lbl_registro').val(data.rut);
         }
     }).fail(function(){
-        alert('AUN NO CONECTA CON LA API, PAJARON');
+        alert('AUN NO CONECTA CON LA API');
     });
 }*/
 

@@ -1,6 +1,6 @@
 $(document).ready(function() {
     fn_indicadores();
-    fn_temperatura();
+    //fn_temperatura();
   });
 
 $('#btn_logout').click(function(){

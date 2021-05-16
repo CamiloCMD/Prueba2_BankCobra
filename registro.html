@@ -25,15 +25,15 @@
     <!--Cuerpo Principal-->
       <main class="mb-0 row justify-content-center">
         <div class="div-formularioRegistro" id="formularioRegistro">
-            <h2 class="text-dark text-center">FORMULARIO DE REGISTRO</h2><br><br>
+            <h2 class="text-warning text-center rounded-pill bg-danger">FORMULARIO DE REGISTRO</h2><br><br>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <label class="text-info input-group-text">Rut
                             <small class="obligatorio text-danger">(*)</small>
                         </label>             
                     </div>
-                    <input type="text" class="form-control col-md-8" id="txt_rut">
-                    <button type="button" id="btn_validar" class="btn btn-light">validar</button>
+                    <input type="text" class="form-control col-md-8" id="txt_rut" maxlength="12">
+                    <button type="button" id="btn_validar" class="btn btn-light">Validar</button>
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -41,7 +41,7 @@
                             <small class="obligatorio text-danger">(*)</small>
                         </label>
                     </div>
-                    <input type="text" class="form-control col-md-10" id="txt_nombres">
+                    <input type="text" class="form-control col-md-10" id="txt_nombres" minlength="3">
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="mb-2 row justify-content-center">
-                    <button type="button" class="btn btn-danger btn-outline-warning text-light mb-2" id="btn_ingresar">Ingresar</button>
+                    <button type="button" class="btn btn-danger btn-outline-warning text-light mb-2" id="btn_ingresarRegistro">Ingresar</button>
                 </div>
                 
                 <br>

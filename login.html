@@ -22,14 +22,18 @@
   </header>
         <main class="mb-0 row justify-content-center margenLogin">
             <div class="div-formularioLogin margenLogin">
-              <h3 class="text-danger text-center bg-warning">ACCESO CLIENTES</h3><br><br>
+              <h3 class="text-danger text-center bg-warning rounded-circle">ACCESO CLIENTES</h3><br><br>
                 <div class="form-group text-danger">
-                    <label>Rut</label>
-                    <input type="text" class="form-control" id="txt_rutLogin">
+                    <label>Rut
+                      <small class="obligatorio text-danger">(*)</small>
+                    </label>
+                    <input type="text" class="form-control" id="txt_rutLogin" minlength="9" maxlength="12">
                 </div>
                 <div class="form-group  text-danger">
-                    <label>Contraseña</label>
-                    <input type="password" class="form-control" id="txt_passLogin">
+                    <label>Contraseña
+                      <small class="obligatorio text-danger">(*)</small>
+                    </label>
+                    <input type="password" class="form-control" id="txt_passLogin" minlength="6" maxlength="10">
                 </div>
               <button type="button" class="btn btn-danger text-warning" id="btn_ingresar">Ingresar</button>
               <button type="button" class="btn btn-danger text-warning" id="btn_limpiar">Limpiar</button>
