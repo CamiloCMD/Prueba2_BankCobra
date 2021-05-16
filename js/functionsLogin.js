@@ -47,3 +47,5 @@ function fn_limpiar(){
     $('#txt_rutLogin').val("");
     $('#txt_passLogin').val("");
 }
+
+	
