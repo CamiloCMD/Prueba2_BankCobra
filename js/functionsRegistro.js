@@ -129,13 +129,20 @@ $('#btn_finalizarRegistro').click(function(e){
 });
 */
 
-$('#btn_validar').click(function(e){
-    fn_validarRut();
+$('#txt_rut').keydown(function(e){
+    console.log(e.keyCode);
+    if (e.keyCode == 9 || e.keyCode == 'tab') {
+        fn_validarRut();
+        
+    }
+
 })
-/*
+
+
 function fn_validarRut(){
     var valor = $('txt_rut').val();
-    $.getJSON('https://api.libreapi.cl/rut/validate'+ valor, function(data){
+    $.getJSON('https://api.libreapi.cl/rut/validate/' 
+    + valor, function(data){
 
         if(data.rut == undefined){
             $('#lbl_registro').val(data.message);
@@ -146,7 +153,7 @@ function fn_validarRut(){
     }).fail(function(){
         alert('AUN NO CONECTA CON LA API');
     });
-}*/
+}   
 
 function fn_limpiar(){
     $('#txt_rut').val("");
