@@ -22,6 +22,21 @@
             </a>
           </nav>
       </header>
+              <!--Indicadores-->
+              <div class="mb-0 row alert alert-secondary">
+                <div class="justify-content-start">
+                    <label class="align-top text-monospace">Indicadores Economicos
+                        <label id="lbl_dolar" class="margenIndicadores bg-warning"></label>
+                        <label id="lbl_euro" class="margenIndicadores bg-warning"></label>
+                        <label id="lbl_uf" class="margenIndicadores bg-warning"></label>
+                    </label>
+                </div>
+                <div class="ml-auto text-monospace">
+                    <label>Temperatura Actual
+                        <ul id="lbl_temperatura" class="bg-warning"></ul>
+                    </label>    
+                </div>
+            </div> <br>
     <!--Cuerpo Principal-->
       <main class="mb-0 row justify-content-center">
         <div class="div-formularioRegistro" id="formularioRegistro">
@@ -33,9 +48,11 @@
                         </label>             
                     </div>
                     <input type="text" class="form-control col-md-8" id="txt_rut" maxlength="12">
-                    <button type="button" id="btn_validar" class="btn btn-light">Validar</button>
+
+                 
                 </div>
                 <div class="input-group mb-3">
+
                     <div class="input-group-prepend">
                         <label class="text-info input-group-text">Nombres
                             <small class="obligatorio text-danger">(*)</small>
@@ -107,4 +124,5 @@
       </footer>
 </body>
 <script src="js/functionsRegistro.js"></script>
+<script src="js/functionsMain.js"></script>
 </html>
