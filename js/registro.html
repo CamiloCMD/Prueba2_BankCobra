@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <link type ="text/css" rel= "stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <!--Titulo Pagina-->
+    <title>¡Cambiate con nosotros!</title>
+</head>
+<body>
+    <!--Navegacion-->
+    <header>
+        <nav class="navbar navbar-light bg-danger">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo_01.png" width="120" height="113" alt="Logo">
+            </a>
+          </nav>
+      </header>
+              <!--Indicadores-->
+              <div class="mb-0 row alert alert-secondary">
+                <div class="justify-content-start">
+                    <label class="align-top text-monospace">Indicadores Economicos
+                        <label id="lbl_dolar" class="margenIndicadores bg-warning"></label>
+                        <label id="lbl_euro" class="margenIndicadores bg-warning"></label>
+                        <label id="lbl_uf" class="margenIndicadores bg-warning"></label>
+                    </label>
+                </div>
+                <div class="ml-auto text-monospace">
+                    <label>Temperatura Actual
+                        <ul id="lbl_temperatura" class="bg-warning"></ul>
+                    </label>    
+                </div>
+            </div> <br>
+    <!--Formulario-->
+      <main class="mb-0 row justify-content-center">
+        <div class="div-formularioRegistro" id="formularioRegistro">
+            <h2 class="text-warning text-center rounded-pill bg-danger">FORMULARIO DE REGISTRO</h2><br><br>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="text-info input-group-text">Rut
+                            <small class="obligatorio text-danger">(*)</small>
+                        </label>             
+                    </div>
+                    <input type="text" class="form-control col-md-8" id="txt_rut" maxlength="12">
+
+                 
+                </div>
+                <div class="input-group mb-3">
+
+                    <div class="input-group-prepend">
+                        <label class="text-info input-group-text">Nombres
+                            <small class="obligatorio text-danger">(*)</small>
+                        </label>
+                    </div>
+                    <input type="text" class="form-control col-md-10" id="txt_nombres" minlength="3">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="text-info input-group-text">Apellido Paterno
+                            <small class="obligatorio text-danger">(*)</small>
+                        </label>
+                    </div>
+                    <input type="text" class="form-control col-md-9" id="txt_aPaterno">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="text-info input-group-text">Apellido Materno
+                            <small class="obligatorio text-danger">(*)</small>
+                        </label>
+                    </div>
+                    <input type="text" class="form-control col-md-9" id="txt_aMaterno">
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <label class="text-info input-group-text">Correo Electronico
+                            <small class="obligatorio text-danger">(*)</small>
+                        </label>
+                    </div>
+                    <input type="email" class="form-control col-md-9" id="txt_correo">
+                </div>
+                
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <label class="text-info input-group-text">Tipo de Cuenta
+                            <small class="obligatorio text-danger">(*)</small>
+                        </label>
+                    </div>
+                    <select class="form-control col-md-9" id="cmb_tipoCuenta" selected>
+                        <option>-- Seleccione --</option>
+                        <option>Corriente</option>
+                        <option>Vista</option>
+                        <option>Ahorro</option>
+                    </select>
+                </div>
+                <br><br>
+                <div class="row justify-content-center">
+                    <div class="mb-2">
+                        <button type="button" class="btn btn-danger text-light mb-3" id="btn_limpiar">Limpiar</button>
+                    </div><br>
+                    <div class="mb-2 obligatorio">
+                        <button type="button" class="btn btn-danger text-light mb-2" id="btn_finalizarRegistro">Finalizar Registro</button>
+                    </div>
+                </div>
+                <div class="mb-2 row justify-content-center">
+                    <button type="button" class="btn btn-danger btn-outline-warning text-light mb-2" id="btn_ingresarRegistro">Ingresar</button>
+                </div>
+                
+                <br>
+                <label id="lbl_registro" class="text-success"></label>
+                <ul id="messagesRegistro" class="text-danger"></ul>
+        </div>
+    
+    </main>  
+    <!--Footer-->
+    <footer>
+        <p class="bg-danger text-light text-center"> Infórmese sobre la garantía estatal de los depósitos en su banco o en CMF www.cmfchile.cl. Infórmese sobre las entidades autorizadas para emitir Tarjetas de Pago en el país, quienes se encuentran inscritas en los Registros de Emisores de Tarjetas que lleva la CMF en www.cmfchile.cl.</p>
+      
+      </footer>
+</body>
+<script src="js/functionsRegistro.js"></script>
+<script src="js/functionsMain.js"></script>
+</html>
